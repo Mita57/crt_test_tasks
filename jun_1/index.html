@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <title>Kreativ Kruto</title>
+</head>
+<body>
+<header id="header">
+    <div>
+        Hello gais
+    </div>
+    <div onclick="toggleSideBar()">
+        Toggle sidebar
+    </div>
+    <div>
+        Hello gais
+    </div>
+    <div id="header_float_right">
+        Bye gais
+    </div>
+</header>
+<div id="content">
+    <nav id="content_nav_bar">
+        <div>Natus Vincere</div>
+        <div>FaZe Clan</div>
+        <div>Astralis</div>
+        <div>Gambit</div>
+    </nav>
+    <div id="content_page">
+        <div id="content_page_arrayShift" class="content_page_block">
+            <h3>Сдвиг элементов массива</h3><br>
+            <label for="array_size"> Размер массива </label>
+            <input type="number" min="1" value="1" id="array_size">
+            <label for="array_shift"> Сдвиг </label>
+            <input type="number" min="1" value="1" id="array_shift">
+            <button onclick="arrayShift()">Выполнятор</button>
+            <br>
+            <div id="array_shift_result">
+            </div>
+        </div>
+        <div id="content_page_substring" class="content_page_block">
+            <h3>Самая длинная общая подстрока</h3><br>
+            <label for="substr_text1">Текст 1</label><input type="text" id="substr_text1"
+                                                            oninput="validateSubstrInputs()">
+            <p><label for="substr_text2">Текст 2</label><input type="text" id="substr_text2"
+                                                               oninput="validateSubstrInputs()"></p>
+            <button onclick="maxSubstring()" disabled id="content_page_substring_btn">Выполнятор</button>
+            <div id="content_page_substring_res"></div>
+        </div>
+        <div class="content_page_block">
+            <h3>Чекбоксы</h3><br>
+            <div id="content_page_cbs">
+                <div>
+                    <label for="cb_header">Хедер</label>
+                    <input type="checkbox" id="cb_header" onchange="toggleElement('header')">
+                </div>
+                <div>
+                    <label for="cb_gais">Bye gais </label>
+                    <input type="checkbox" id="cb_gais" onchange="toggleElement('header_float_right')">
+                </div>
+                <div>
+                    <label for="cb_substr">Подстрока</label>
+                    <input type="checkbox" id="cb_substr" onchange="toggleElement('content_page_substring')">
+                </div>
+                <div>
+                    <label for="cb_all">Все</label>
+                    <input type="checkbox" id="cb_all" onchange="toggleAll()">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
