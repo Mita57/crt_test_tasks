@@ -1,10 +1,10 @@
 <template>
-  <div id="game">
+  <div class="game">
     <card v-for="card in cards" :key="card.key" v-on:cardClicked="cardClickedHandler" :card="card" />
-    <div v-if="!gameFinished" id="game_stats">
+    <div v-if="!gameFinished" class="game_stats">
       <div>Прошло времени: {{timeElapsed / 10}}</div> <div>Перевернуто пар: {{this.openedPairs}}</div>
     </div>
-    <div id="game_hiScoreEnter" v-if="gameFinished">
+    <div class="game_hiScoreEnter" v-if="gameFinished">
       Итоговое время: {{this.timeElapsed / 10}}
       <p>Ваше имя: <input type="text" oninput="" v-model="userName">
         <button :disabled="!userName" @click="this.submitScore">Добавить результат</button></p>
@@ -104,7 +104,7 @@ export default {
 </script>
 
 <style scoped>
-  #game {
+  .game {
     display: flex;
     margin: auto;
     width: 510px;
@@ -116,7 +116,7 @@ export default {
     align-items: center;
   }
 
-  #game_stats {
+  .game_stats {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
@@ -126,7 +126,7 @@ export default {
     margin-top: 8px;
   }
 
-  #game_hiScoreEnter {
+  .game_hiScoreEnter {
     margin-top: 8px;
   }
 </style>

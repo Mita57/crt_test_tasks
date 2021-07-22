@@ -1,5 +1,5 @@
 <template>
-  <div id="leaderBoard">
+  <div class="leaderBoard">
     <h2>Таблица результатов</h2>
     <p v-for="score in hiScores">
       {{ score.name }}: {{ score.time }} сек., {{score.opened}} открытых пар
@@ -28,7 +28,7 @@ export default {
 </script>
 
 <style scoped>
-  #leaderBoard {
+  .leaderBoard {
     margin-top: 32px;
     padding: 16px;
   }

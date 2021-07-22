@@ -35,54 +35,54 @@ header div {
 header div:hover {
   background-color: #222;
 }
-#header_float_right {
+.header_float_right {
   margin-left: auto;
 }
-#content {
+.content {
   width: 1200px;
   margin: 80px auto auto;
 }
-#content_nav_bar {
+.content_nav_bar {
   background-color: #fff;
   width: 150px;
   padding: 8px;
   margin: 8px 0 0 8px;
   display: block;
 }
-#content_nav_bar div {
+.content_nav_bar div {
   padding: 4px;
   cursor: pointer;
   transition: 0.3s;
   border-top: 1px solid #aaa;
 }
-#content_nav_bar div:first-of-type {
+.content_nav_bar div:first-of-type {
   border-top: none;
 }
-#content_nav_bar div:hover {
+.content_nav_bar div:hover {
   background-color: #ccc;
 }
-#content_page {
+.content_page {
   background-color: #fff;
   width: 800px;
   padding: 8px;
   margin: -128px auto auto;
 }
-#content_page_arrayShift input[type=number] {
+.content_page_arrayShift input[type=number] {
   width: 80px;
 }
-#content_page_cbs {
+.content_page_cbs {
   display: flex;
   align-items: center;
 }
-#content_page_cbs div {
+.content_page_cbs div {
   display: flex;
   align-items: center;
 }
-#content_page_substring input[type=text] {
+.content_page_substring input[type=text] {
   margin-left: 8px;
   width: 710px;
 }
-#content_page_substring_res {
+.content_page_substring_res {
   margin-top: 8px;
 }
 .content_page_block {
@@ -92,13 +92,13 @@ header div:hover {
   border-radius: 8px;
 }
 @media (max-width: 1200px) {
-  #content_nav_bar {
+  .content_nav_bar {
     display: none;
   }
-  #content_page {
+  .content_page {
     margin-top: 8px;
   }
-  #content {
+  .content {
     width: 800px;
   }
 }

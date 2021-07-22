@@ -1,0 +1,82 @@
+{
+  "response": [
+    {
+      "type": "flat",
+      "id": 1,
+      "attributes": {
+        "title": "3-х комнатная на Минской",
+        "rooms": 3,
+        "img": "https://steamuserimages-a.akamaihd.net/ugc/1018322789850902533/36A5B5DA8FE9425D285E6CF163D66C5C38F3FD5B/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+        "address": {
+          "city": "Tyumen",
+          "street": "Минская",
+          "house": "3a",
+          "room": "123"
+        },
+        "area": 134,
+        "unit": "квм"
+      },
+      "relationships": {
+        "type": "agent",
+        "id": 2,
+        "attributes": {
+          "first_name": "Василий",
+          "last_name": "Дроздов",
+          "middle_name": "Михайлович"
+        }
+      }
+    },
+    {
+      "type": "flat",
+      "id": 2,
+      "attributes": {
+        "title": "1 комнатная на Барабаинской",
+        "rooms": 2,
+        "img": "https://static.planetminecraft.com/files/resource_media/screenshot/1930/2019-07-24-02-19-09-1563949831.png",
+        "address": {
+          "city": "Tyumen",
+          "street": "Барабинская",
+          "house": "12",
+          "room": "45"
+        },
+        "area": 34,
+        "unit": "квм"
+      },
+      "relationships": {
+        "type": "agent",
+        "id": 10,
+        "attributes": {
+          "first_name": "Михаил",
+          "last_name": "Иванов",
+          "middle_name": "Демидович"
+        }
+      }
+    },
+    {
+      "type": "flat",
+      "id": 3,
+      "attributes": {
+        "title": "Квартира Ленина",
+        "rooms": 4,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQb02a2er7TyMYDBwpKNniUvev5srNA8RXiQ&usqp=CAU",
+        "address": {
+          "city": "Tyumen",
+          "street": "Ленина",
+          "house": "134",
+          "room": "24"
+        },
+        "area": 134,
+        "unit": "квм"
+      },
+      "relationships": {
+        "type": "agent",
+        "id": 44,
+        "attributes": {
+          "first_name": "Степан",
+          "last_name": "Карачаев",
+          "middle_name": "Иванович"
+        }
+      }
+    }
+  ]
+}
